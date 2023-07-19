@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	char n;
+
+	cin>>n;
+	
+
+	
+	if(n>='a' && n<='z'){
+	    cout<<"lower case"<<endl;
+	}
+	else if(n>='A' && n<='Z'){
+	    cout<<"upper case"<<endl;
+	    
+	}
+	else{
+	    cout<<"numeric"<<endl;
+	}
+	
+	return 0;
+}
