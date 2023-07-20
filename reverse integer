@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n,X;
+	 int Z=0;
+	int i =10;
+	
+	cin>>n;
+	
+    while(n/i !=0){
+	   i=i*10;
+	   
+	    
+	    
+	}
+	
+	X=i/10;
+	
+	cout<<X<<endl;
+	
+	
+	while(n!=0){
+	   int Y= n%10;
+	   n=n/10;
+	   
+	   
+	  
+	   Z=Z+(Y*X);
+	   X=X/10;
+	   
+	   
+	}
+	
+	cout<<Z<<endl;
+  
+	return 0;
+}
