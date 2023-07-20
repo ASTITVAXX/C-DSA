@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n,Y=1,Z=0;
+	
+	
+	cin>>n;
+	
+    while(n!=0){
+	    int X=n%10;
+	    n=n/10;
+	    
+	    Y=Y*X;
+	    
+	    Z=Z+X;
+	    
+	    
+	    
+	}
+	
+	cout<<Y-Z<<endl;
+	
+	
+
+	
+
+
+	
+	return 0;
+}
