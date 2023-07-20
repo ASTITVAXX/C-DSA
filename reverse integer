@@ -1,11 +1,31 @@
 #include <iostream>
 using namespace std;
 
+int pof2(int a){
+    int i=1;
+    int N=2;
+    while(i!=(a)){
+        
+       
+        N=N*2;
+        i=i+1;
+        
+        
+    }
+    
+    return N;
+    
+    
+    
+}
+
 int main() {
 	// your code goes here
 	int n,X;
 	 int Z=0;
 	int i =10;
+	
+	int MAX= (pof2(31))-1, MIN= -(pof2(31));
 	
 	cin>>n;
 	
@@ -33,7 +53,13 @@ int main() {
 	   
 	}
 	
-	cout<<Z<<endl;
-  
+	
+	if(Z>MAX || Z<(-pof2(31))){
+	    cout<<"ERROR"<<endl;
+	    
+	    return 0;
+	    
+	}else{cout<<Z<<endl;}
+	
 	return 0;
 }
