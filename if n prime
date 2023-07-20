@@ -16,10 +16,9 @@ int main() {
 	        
 	        cout<<"Given n is not prime"<<endl;
 	        break;}
-	    X=i;
-	    	if(n%X !=0){cout<<"n is prime"<<endl;}
+	    
+	    	if(i==(n-1)){cout<<"n is prime"<<endl;}
 	}
-
 	
 	return 0;
 }
