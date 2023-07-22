@@ -1,0 +1,37 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+
+int maxofarr(int arr[], int n){
+    
+    int maxm=INT_MIN;
+    for(int i=0;i<n;i++){
+         maxm= max(maxm,arr[i]);
+    }
+   
+    return maxm;
+    
+}
+
+
+int main() {
+	// your code goes here
+	int size;
+	cin>>size;
+	
+	int ar[100];
+	for(int i=0;i<size;i++){
+	    cin>> ar[i];
+	    cout<<endl;
+	    
+	    
+	}
+	for(int j=0;j<size;j++){
+	    
+	    cout<< ar[j]<< " ";
+	    
+	}
+	cout<<maxofarr(ar,size);
+
+	return 0;
+}
