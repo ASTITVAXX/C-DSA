@@ -1,0 +1,28 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+
+void swapaltr(int arr[],int n){
+    for(int i=0;i<n;i=i+2){
+        
+        if(i+1<n){
+        swap(arr[i],arr[i+1]);
+        }
+        
+    }
+    
+}
+
+int main() {
+	// your code goes here
+	int err[5]={3,5,2,23,42};
+	
+	swapaltr(err,5);
+	
+	cout<< err[4] <<endl;
+	
+	
+
+
+	return 0;
+}
