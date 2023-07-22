@@ -1,0 +1,36 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+
+bool search(int arr[], int size, int key){
+    
+    for(int i=0;i<size;i++){
+        
+        if(arr[i]==key){
+            return 1;
+        }
+        
+       
+    }
+     return 0;
+}
+
+
+int main() {
+	// your code goes here
+	int err[10]={3,5,2,23,42,765,7,56,86,54};
+	
+	int key;
+	cin>>key;
+	
+	if(search(err,10,key)){
+	    cout<<"present"<<endl;
+	    
+	}
+	else{
+	    cout<<"not present"<<endl;
+	}
+	
+
+	return 0;
+}
