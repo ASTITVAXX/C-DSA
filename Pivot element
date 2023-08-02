@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int pivot(int arr[], int size){
+    
+    int s=0;
+    int e=size-1;
+    int temp;
+    int mid=s +(e-s)/2;
+    
+    while(s<e){
+        
+        if(arr[mid]>arr[0]){
+             
+             s=mid+1;
+             
+            
+        }
+        
+        else{
+            e=mid;
+            
+            
+            
+        }
+        
+        
+        mid=s +(e-s)/2;
+        
+    }
+    
+    return s;
+    
+}
+
+
+int main() {
+	// your code goes here
+	
+	int A[9]={2,4,6,8,7,5,3,1,0};
+	int B[7]={18,21,3,7,9,12,14};
+	
+	int X= pivot(B,7);
+	
+	cout<<X<<endl;
+	
+	return 0;
+}
