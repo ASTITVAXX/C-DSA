@@ -1,3 +1,8 @@
+// FOR TOTAL NO. OF OCCURENCES , JUST DO (RIGHT OCC - LEFT OCC) + 1
+
+
+
+
 int LBS(int arr[], int size , int key){
     
     int s=0;
@@ -67,3 +72,6 @@ int RBS(int arr[], int size , int key){
     return temp;
     
 }
+
+
+// FOR TOTAL NO. OF OCCURENCES , JUST DO (RIGHT OCC - LEFT OCC) + 1
