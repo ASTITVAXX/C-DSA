@@ -1,0 +1,29 @@
+#include<iostream>
+#include<climits>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+int AR[6]={12,6,21,10,19,4};
+
+for(int i=0;i<5;i++){
+    int minI=i;
+    for(int j=i+1;j<6;j++){
+
+        if(AR[j]<AR[minI]){
+            minI=j;
+
+        }
+    }
+
+    swap(AR[j],AR[minI]);
+
+}
+
+cout<<AR[0]<<endl;
+
+    return 0;
+
+}
+
