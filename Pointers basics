@@ -23,6 +23,11 @@ int main() {
 	
 	(*ptr)++;
 	cout<<i<<endl;
+
+	//internal working of an array goes like this -
+	// arr[i]= *(arr+i)
+	// also same as i[arr]= *(arr+i)
+	
 	
 	
 	
