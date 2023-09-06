@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	
+	
+	
+	
+	int i=9;
+	int *ptr=&i;
+	int *q= ptr;
+	
+	cout<<ptr<<endl;
+	cout<<&i<<endl;
+	cout<<*ptr<<endl;
+	
+	
+		
+	cout<<q<<endl;
+	cout<<*q<<endl;
+	cout<<&i<<endl;
+	
+	(*ptr)++;
+	cout<<i<<endl;
+	
+	
+	
+	
+	return 0;
+}
