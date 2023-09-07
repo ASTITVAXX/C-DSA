@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+
+
+int getsum(int arr[],int size){
+    if(size==0){
+        return 0;
+    }
+    if(size==1){
+        return arr[0];
+        
+    }
+    
+    return arr[0]+getsum(arr+1,size-1);
+    
+    
+    
+}
+
+
+
+
+int main() {
+	// your code goes here
+	
+	
+	
+	int arr[5]={4,7,2,9,11};
+	
+	
+	cout<<getsum(arr,5)<<endl;
+
+	return 0;
+}
